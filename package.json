@@ -1,6 +1,6 @@
 {
   "name": "@w12/conventional-changelog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "W12 conventional changelog based on angular preset",
   "main": "index.js",
   "scripts": {
