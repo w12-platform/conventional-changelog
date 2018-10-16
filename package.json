@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix .",
+    "gen-release":  "conventional-github-releaser -p angular",
     "test": "mocha --timeout 30000 && npm run-script lint",
     "test-windows": "mocha --timeout 30000"
   },
