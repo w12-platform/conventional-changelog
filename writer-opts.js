@@ -25,13 +25,8 @@ module.exports = Q.all([
 function getWriterOpts () {
   return {
     transform: (commit, context) => {
-      let discard = true
+      let discard = commit.notes.length !== 0;
       const issues = []
-
-      commit.notes.forEach(note => {
-        note.title = `BREAKING CHANGES`
-        discard = false
-      })
 
       if (commit.type === `feat`) {
         commit.type = `Features`
