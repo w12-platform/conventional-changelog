@@ -25,7 +25,7 @@ module.exports = Q.all([
 function getWriterOpts () {
   return {
     transform: (commit, context) => {
-      let discard = commit.notes.length !== 0;
+      let discard = commit.notes.length === 0;
       const issues = []
 
       if (commit.type === `feat`) {
